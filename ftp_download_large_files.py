@@ -16,9 +16,8 @@ Username = 'xXxSlayerxXx'
 Password = 'hunter1'
 
 # downloads varbiable is a list of lists.
-# the 1st place is for the local user file download name
-# the 2nd place is for the FTP file download path
-# examples below
+# the 1st place is for the local file download save name
+# the 2nd place is for the FTP filename download path
 downloads = [['How.to.Count.Sand.Grains.as.a.Hobby.S15E59.VHS.mkv', '/files/morefiles/lessfiles/downloads/How.to.Count.Sand.Grains.as.a.Hobby.S15E59.VHS.mkv'],
              ['How.to.Count.Sand.Grains.as.a.Hobby.S15E60.VHS.mkv',
                  '/files/morefiles/lessfiles/downloads/How.to.Count.Sand.Grains.as.a.Hobby.S15E60.VHS.mkv'],
@@ -83,7 +82,7 @@ for item_download in downloads:
         try:
             # this is waiting start_download thread/function to complete
             # and it being checked every 60 seconds. in-between waits
-            # a 'ping-style' command is sent to server 
+            # a 'ping-style' command is sent to server
             thread1.join(60)
             print('Pinging ftp server to keep connection alive...')
             count = count + 1

@@ -1,9 +1,9 @@
 # ftp_download_large_files
 ## Download large files and keep connection alive over FTP TLS using Python's ftplib
 
-This python script connects to FTP server using TLS connection, downloads files one after another, and uses a separate processing thread to send the FTP server 'NOOP' data in an attempt to keep the server connection alive. 
+This python script connects to FTP server using TLS connection, downloads files one after another, and uses a separate processing thread to send the FTP server 'NOOP' command to keep the server connection alive. 
 
-The code may throw exceptions from ftplib ***and*** still continue with the download. 
+Code may throw exceptions from ftplib ***and*** still continue with the download. 
 
 FTP connects with TLS
 ```

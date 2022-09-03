@@ -19,7 +19,6 @@ Password = 'hunter1'
 Edit the downloads variable (this is a list of lists) to indicate the name of your local file save and the FTP's file pathname to download the file.
 ```
 downloads = [['How.to.Count.Sand.Grains.as.a.Hobby.S15E59.VHS.mkv', '/files/morefiles/lessfiles/downloads/How.to.Count.Sand.Grains.as.a.Hobby.S15E59.VHS.mkv'],
-             ['How.to.Count.Sand.Grains.as.a.Hobby.S15E60.VHS.mkv',
-                 '/files/morefiles/lessfiles/downloads/How.to.Count.Sand.Grains.as.a.Hobby.S15E60.VHS.mkv'],
+             ['How.to.Count.Sand.Grains.as.a.Hobby.S15E60.VHS.mkv', '/files/morefiles/lessfiles/downloads/How.to.Count.Sand.Grains.as.a.Hobby.S15E60.VHS.mkv'],
              ['How.to.Count.Sand.Grains.as.a.Hobby.S15E61.VHS.mkv', '/files/morefiles/lessfiles/downloads/How.to.Count.Sand.Grains.as.a.Hobby.S15E61.VHS.mkv']]
 ```

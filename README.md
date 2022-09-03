@@ -3,6 +3,8 @@
 
 This python script connects to FTP server using TLS connection, downloads files one after another, and uses a separate processing thread to send the FTP server 'NOOP' data in an attempt to keep the server connection alive. 
 
+The code may throw exceptions from ftplib ***and*** still continue with the download. 
+
 FTP connects with TLS
 ```
 ftp = FTP_TLS()

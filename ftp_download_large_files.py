@@ -1,6 +1,6 @@
 # this script downloads files one after another and attempts to keep the
 # ftp server connection alive during large file downloads
-# this script is setup for FTP TLS connections
+# script is setup for FTP TLS connections
 
 from ftplib import FTP_TLS
 import threading

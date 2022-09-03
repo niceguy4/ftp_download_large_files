@@ -81,6 +81,9 @@ for item_download in downloads:
     count = 0
     while thread1.is_alive():
         try:
+            # this is waiting start_download thread/function to complete
+            # and it being checked every 60 seconds. in-between waits
+            # a 'ping-style' command is sent to server 
             thread1.join(60)
             print('Pinging ftp server to keep connection alive...')
             count = count + 1

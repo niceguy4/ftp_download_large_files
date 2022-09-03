@@ -22,3 +22,11 @@ downloads = [['How.to.Count.Sand.Grains.as.a.Hobby.S15E59.VHS.mkv', '/files/more
              ['How.to.Count.Sand.Grains.as.a.Hobby.S15E60.VHS.mkv', '/files/morefiles/lessfiles/downloads/How.to.Count.Sand.Grains.as.a.Hobby.S15E60.VHS.mkv'],
              ['How.to.Count.Sand.Grains.as.a.Hobby.S15E61.VHS.mkv', '/files/morefiles/lessfiles/downloads/How.to.Count.Sand.Grains.as.a.Hobby.S15E61.VHS.mkv']]
 ```
+
+Semi-related issues found on *stackoverflow* that this script attempts to resolve.
+
+[ftplib-error-perm-550-operation-not-permitted-when-trying-to-download-the-sec](https://stackoverflow.com/questions/73534659/ftplib-error-perm-550-operation-not-permitted-when-trying-to-download-the-sec)
+
+[python-file-download-using-ftplib-hangs-forever-after-file-is-successfully-down/49988443#49988443](https://stackoverflow.com/questions/49976095/python-file-download-using-ftplib-hangs-forever-after-file-is-successfully-down/49988443#49988443)
+
+[ftplib-error-perm-550-operation-not-permitted-when-trying-to-download-the-sec](https://stackoverflow.com/questions/73534659/ftplib-error-perm-550-operation-not-permitted-when-trying-to-download-the-sec)

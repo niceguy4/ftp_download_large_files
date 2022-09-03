@@ -24,6 +24,9 @@ downloads = [['How.to.Count.Sand.Grains.as.a.Hobby.S15E59.VHS.mkv', '/files/more
              ['How.to.Count.Sand.Grains.as.a.Hobby.S15E61.VHS.mkv', '/files/morefiles/lessfiles/downloads/How.to.Count.Sand.Grains.as.a.Hobby.S15E61.VHS.mkv']]
 
 
+# download function using ftplib transfercmd()
+# write file to local harddrive
+# voidresp is important for downloading one file after another
 def start_download(item_download):
     with open(str(item_download[0]), 'wb') as f:
         try:
@@ -60,6 +63,7 @@ try:
     # ftp server may require prot_p for secure ftp connections
     ftp.prot_p()
 
+    # seems to be important
     ftp.voidcmd('TYPE I')
 
 except Exception as ftp_setup_error:

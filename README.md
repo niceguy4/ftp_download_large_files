@@ -5,11 +5,6 @@ This python script connects to FTP server using TLS connection, downloads files 
 
 The code may throw exceptions from ftplib ***and*** still continue with the download. 
 
-## Run
-```
-python ftp_download_large_files.py
-```
-
 FTP connects with TLS
 ```
 ftp = FTP_TLS()
@@ -30,10 +25,15 @@ downloads = [['How.to.Count.Sand.Grains.as.a.Hobby.S15E59.VHS.mkv', '/files/more
              ['How.to.Count.Sand.Grains.as.a.Hobby.S15E61.VHS.mkv', '/files/morefiles/lessfiles/downloads/How.to.Count.Sand.Grains.as.a.Hobby.S15E61.VHS.mkv']]
 ```
 
-Semi-related issues found on *stackoverflow* that this script attempts to resolve.
+Semi-related issues found on *stackoverflow* that this script attempts to resolve. These links talk about issues with download large files and the server dropping the connection and how to handle "pinging" the send with 'NOOP' command to keep connection alive.
 
 [ftplib-error-perm-550-operation-not-permitted-when-trying-to-download-the-sec](https://stackoverflow.com/questions/73534659/ftplib-error-perm-550-operation-not-permitted-when-trying-to-download-the-sec)
 
 [python-file-download-using-ftplib-hangs-forever-after-file-is-successfully-down/49988443#49988443](https://stackoverflow.com/questions/49976095/python-file-download-using-ftplib-hangs-forever-after-file-is-successfully-down/49988443#49988443)
 
 [ftplib-error-perm-550-operation-not-permitted-when-trying-to-download-the-sec](https://stackoverflow.com/questions/73534659/ftplib-error-perm-550-operation-not-permitted-when-trying-to-download-the-sec)
+
+## Run
+```
+python ftp_download_large_files.py
+```

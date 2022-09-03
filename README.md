@@ -25,7 +25,7 @@ downloads = [['How.to.Count.Sand.Grains.as.a.Hobby.S15E59.VHS.mkv', '/files/more
              ['How.to.Count.Sand.Grains.as.a.Hobby.S15E61.VHS.mkv', '/files/morefiles/lessfiles/downloads/How.to.Count.Sand.Grains.as.a.Hobby.S15E61.VHS.mkv']]
 ```
 
-Semi-related issues found on *stackoverflow* that this script attempts to resolve. These links talk about issues with download large files and the server dropping the connection and how to handle "pinging" the send with 'NOOP' command to keep connection alive.
+Semi-related issues found on *stackoverflow* that this script attempts to resolve. These links talk about issues with downloading large files and the server dropping the connection. Also discussed is how to handle 'NOOP' command *'ping'* to keep the connection alive.
 
 [ftplib-error-perm-550-operation-not-permitted-when-trying-to-download-the-sec](https://stackoverflow.com/questions/73534659/ftplib-error-perm-550-operation-not-permitted-when-trying-to-download-the-sec)
 

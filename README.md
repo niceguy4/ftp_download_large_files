@@ -5,6 +5,8 @@ This python script connects to FTP server using TLS connection, downloads files 
 
 Code may throw exceptions from ftplib ***and*** still continue with the download. 
 
+You need to provide the FTP file pathname and the name of the file when downloaded.
+
 FTP connects with TLS
 ```
 ftp = FTP_TLS()

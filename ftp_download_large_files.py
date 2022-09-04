@@ -28,23 +28,16 @@ downloads = [['How.to.Count.Sand.Grains.as.a.Hobby.S15E59.VHS.mkv', '/files/more
 # write file to local harddrive
 # voidresp is important for downloading one file after another
 def start_download(item_download):
-    with open(str(item_download[0]), 'wb') as f:
-        try:
-            with ftp.transfercmd(f"RETR {str(item_download[1])}") as sock:
-                print(f'Saving: {item_download[0]}')
-                while True:
-                    block = sock.recv(1024*1024)
-                    if not block:
-                        break
-                    f.write(block)
-                sock.close()
-                ftp.voidresp()
-            print('Download complete.')
-        except Exception as handle_errors:
-            # may receive errors from connection but still
-            # continue with successful download
-            print(f'handle_error msg: {handle_errors}')
-            pass
+    try:
+        print(f'Saving: {item_download[0]}')
+        with open(str(item_download[0]), 'wb') as myfile:
+            ftp.retrbinary(f"RETR {str(item_download[1])}", myfile.write)
+        print('Download complete.')
+    except Exception as handle_errors:
+        # may receive errors from connection but still
+        # continue with successful download
+        print(f'handle_error msg: {handle_errors}')
+        pass
 
 
 # ftp connection
@@ -87,7 +80,7 @@ for item_download in downloads:
             # this is waiting start_download thread/function to complete
             # and it being checked every 60 seconds. in-between waits
             # a 'ping-style' command is sent to server
-            thread1.join(60)
+            thread1.join(180)
             print('Pinging ftp server to keep connection alive...')
             count = count + 1
             ftp.putcmd('NOOP')
